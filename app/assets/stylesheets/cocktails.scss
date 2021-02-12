@@ -1,3 +1,13 @@
 // Place all the styles related to the Cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+#banner-image {
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+  height: 405px;
+  background-color: purple;
+  background-position: center;
+  color:azure;
+  text-align: center;
+  object-fit: cover;
+}
