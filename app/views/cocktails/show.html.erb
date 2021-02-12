@@ -1,0 +1,10 @@
+<h1><%= @cocktail.name %></h1>
+<div class="container">
+  <% @cocktail.doses.each do |dose| %>
+    <%= dose.description %> - <%= dose.ingredient.name %><%= link_to "X", dose_path(dose.id) , method: :delete, data: { confirm: "Are you sure" }, class: "btn btn-primary m-2" %>
+  <% end %>
+  <br>
+  <%= link_to "Return to list of Cocktail", cocktails_path, class: "btn btn-primary m-2"%>
+  <br>
+  <%= link_to "Add dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary m-2"%>
+</div>
